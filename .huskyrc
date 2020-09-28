@@ -1,5 +1,6 @@
 {
     "hooks": {
+        "pre-commit": "lint-staged  & jest -u",
         "commit-msg": "node scripts/verify-commit-msg.js ${HUSKY_GIT_PARAMS}"
     }
 }
