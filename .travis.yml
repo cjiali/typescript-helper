@@ -1,9 +1,11 @@
 language: node_js   # 项目语言
 node_js:
-  - 13.2.0 			    # 项目环境
+  - 12.0.0 			    # 项目环境
 cache:				      # 缓存 node_js 依赖，提升第二次构建的效率
 directories:
   - node_modules
+install:            # Travis Ci 默认安装指令为 `yarn --frozen-lockfile`
+  - yarn            # 该指令会锁定当前依赖包的版本号，当依赖包更新版本时 yarn 为了防止开发者沿用旧版本的依赖就会报出警告
 test:
   - npm run test    # 运行自动测试框架
 after_success:			# 构建成功后的自定义操作
