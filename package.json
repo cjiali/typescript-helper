@@ -1,0 +1,10 @@
+{
+  "name": "typescript-helper",
+  "version": "0.0.1",
+  "description": "A helper library for typescript project.",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  }
+}
