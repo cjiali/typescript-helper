@@ -7,6 +7,8 @@
   "scripts": {
     "api": "api-extractor run",
     "rollup": "rollup --c rollup.config.js",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "eslint": "eslint",
     "test": "jest --coverage --verbose -u"
   },
   "devDependencies": {
@@ -14,8 +16,13 @@
     "@babel/preset-env": "^7.11.5",
     "@microsoft/api-extractor": "^7.9.22",
     "@types/jest": "^26.0.14",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "eslint": "^7.10.0",
     "eslint-plugin-jest": "^24.0.2",
+    "husky": "^4.3.0",
     "jest": "^26.4.2",
+    "prettier": "^2.1.2",
     "rollup": "^2.28.2",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
